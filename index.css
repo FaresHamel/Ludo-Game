@@ -1,0 +1,218 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right top, #141e30c4,#243b55a6 ),url("Büro.jpg");
+    background-size: cover;
+    background-position:center;
+    height:100vh;
+
+    color: #fff;
+    font-family:sans-serif;
+    font-weight:300;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+   
+}
+.content{
+    background-color:#eee;
+    height:80vh;
+    width:80%;
+    color:#000;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: stretch;
+
+    position: relative;
+}
+.player-panel-two{
+    background-color:#ffffff;
+    
+    flex-grow:1;
+    flex-basis:50%;
+    flex-shrink:0;
+
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+}
+.icon-arrows-square-plus{
+    position: absolute;
+    top:2px;
+    left:-30px;
+    width:10px;
+    color: rgb(221, 78, 11);
+}
+.user-nav-box_icon{
+    width: 20px;
+    height: 25px;
+    fill: blue;
+}
+.currentplayer{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 200;
+}
+.dices{
+     position: absolute;
+     top:35%;
+     left:35%;
+     width:80px;
+     height:80px;
+     background-color: #fff;
+     box-shadow:2px 2px 15px rgba(0, 0, 0, 0.26),-2px -2px  rgba(0, 0, 0, 0.26);
+}
+.dices2{
+    position: absolute;
+    top:35%;
+    left: 55%;
+    width:80px;
+    height:80px;
+    box-shadow:2px 2px 15px rgba(0, 0, 0, 0.26),-2px -2px  rgba(0, 0, 0, 0.26);
+}
+.icon-arrows-hamburger-2{
+    position: absolute;
+    top:2px;
+    left:-30px;
+    color: rgb(221, 78, 11);
+}
+.icon-arrows-fit-horizontal{
+    position: absolute;
+    top:2px;
+    left:-30px;
+    color: rgb(221, 78, 11);
+}
+.btn-new{
+    position: absolute;
+    background-color: initial;
+    border:0 solid #eee;
+    top:30px;
+    left:50%;
+    transform: translateX(-40px);
+    font-size:20px;
+    font-weight: 200;
+    color:rgba(148, 11, 11, 0.623);
+}
+
+.btn-roll{
+
+    position: absolute;
+    background-color: initial;
+    border:0 solid #eee;
+    bottom:30%;
+    left:50%;
+    transform: translateX(-33px);
+    font-size:20px;
+    font-weight: 200;
+    color:rgb(61, 4, 4);
+    transition:all .5s ease-in-out;
+    
+}
+.btn-roll:hover{
+   font-size:21px;
+}
+.btn-hold{
+    position: absolute;
+    background-color: initial;
+    border:0 solid #eee;
+    bottom:20%;
+    left:50%;
+    transform: translateX(-23px);
+    font-size:20px;
+    font-weight: 200;
+    color:rgb(61, 4, 4);
+}
+
+.player-panel-one{
+    flex-grow:1;
+    flex-basis:50%;
+    flex-shrink:0;
+     background-color:#ffffff;
+
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+     /* align-content: flex-end; */
+
+}
+
+.player-curent-box{
+    background-color: rgb(221, 78, 11);
+         flex-basis: 100px;
+         width:100px;
+         display:flex;
+         flex-direction: column;
+         justify-content:space-around;
+         align-items:center;
+}
+.active{
+    background-color: rgba(249, 247, 249, 0.65);
+}
+.player-name{
+    font-size:25px;
+}
+.player-score{
+    font-size: 40px;
+    font-weight:100;
+    color: rgb(221, 78, 11);
+}
+.player-curent-score{
+    color:#eee;
+    font-size: 20px;
+    font-weight:200;
+}
+.winner{
+    color: rgb(228, 56, 56);
+}
+.player-curent-label{
+    color:black;
+}
+#input_number{
+    position: absolute;
+    /* background-color: initial;
+     border:1 solid #eee;  */
+    bottom:14%;
+    left:45%;
+    transform: translateX(-23px);
+}
+.btn-change{
+    position: absolute;
+    bottom:7%;
+    left:45%;
+    background-color:rgb(221, 78, 11);
+    border:0px;
+    width:100px;
+    height:30px;
+    transition:all .5s ease-in-out;
+ }
+ .btn-change:hover{
+
+    box-shadow:0px 4px 10px rgba(0, 0, 0, 0.322);
+ }
+ .btn-send{
+     position: absolute;
+     bottom:2%;
+     left:47%;
+     border:0px;
+     background-color:rgba(11, 85, 221, 0.692);
+     width:60px;
+    height:20px;
+    transition:all .4s ease-in-out;
+ }
+ .btn-send:hover{
+    
+    box-shadow:0px 4px 10px rgba(0, 0, 0, 0.322);
+ }
+
+.inactivbtn{
+
+    display: none;
+}
